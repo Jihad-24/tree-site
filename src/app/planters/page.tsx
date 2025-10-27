@@ -9,7 +9,7 @@ const planters = [
     type: "Company",
     location: "Wroclaw, Poland",
     joined: "6 months ago",
-    sponsorLevel: "Gold planters",
+    sponsorLevel: "Gold Planter",
     treeValue: "$1394",
     nftsOwned: 739,
     trees: 65,
@@ -21,7 +21,7 @@ const planters = [
     type: "Company",
     location: "Wroclaw, Poland",
     joined: "6 months ago",
-    sponsorLevel: "Gold planters",
+    sponsorLevel: "Gold Planter",
     treeValue: "$1394",
     nftsOwned: 739,
     trees: 65,
@@ -33,7 +33,7 @@ const planters = [
     type: "Company",
     location: "Wroclaw, Poland",
     joined: "6 months ago",
-    sponsorLevel: "Gold planters",
+    sponsorLevel: "Gold Planter",
     treeValue: "$1394",
     nftsOwned: 739,
     trees: 65,
@@ -45,7 +45,7 @@ const planters = [
     type: "Company",
     location: "Wroclaw, Poland",
     joined: "6 months ago",
-    sponsorLevel: "Gold planters",
+    sponsorLevel: "Gold Planter",
     treeValue: "$1394",
     nftsOwned: 739,
     trees: 65,
@@ -58,19 +58,19 @@ export default function Planters() {
   const [filter, setFilter] = useState("All");
 
   return (
-    <div className="mb-20">
+    <div className="mb-20 bg-gradient-to-b from-[#f8f9f4] to-[#e8f0e3] min-h-screen">
       <Navbar />
-      <div className="flex justify-between items-center mb-8 md:px-8 mt-8 md:mt-16">
+      <div className="flex justify-between items-center mb-10 md:px-8 mt-10 md:mt-16">
         <h1 className="text-3xl font-semibold text-gray-800">Planters</h1>
-        <div className="flex gap-2 bg-gray-100 p-1 rounded-full ">
+        <div className="flex gap-2 bg-gray-100 p-1 rounded-full">
           {["All", "Companies", "Individuals"].map((option) => (
             <button
               key={option}
               onClick={() => setFilter(option)}
-              className={`px-4 py-1 rounded-full cursor-pointer bg-gray-50 text-sm font-medium transition-all duration-200 ${
+              className={`px-4 py-1 rounded-full cursor-pointer text-sm font-medium transition-all duration-200 ${
                 filter === option
-                  ? "bg-green-100 text-green-700"
-                  : "text-gray-400 hover:text-green-500"
+                  ? "bg-green-700 text-white"
+                  : "text-gray-600 hover:bg-green-100"
               }`}
             >
               {option}
@@ -79,76 +79,56 @@ export default function Planters() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:px-8">
-        {planters.map((sponsor) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:px-8">
+        {planters.map((planter) => (
           <div
-            key={sponsor.name}
-            className="bg-white rounded-2xl cursor-pointer border border-gray-100 overflow-hidden hover:shadow-md transition-all"
+            key={planter.name}
+            className="bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-200"
           >
-            {/* Top Section */}
-            <div className="flex justify-between items-start bg-green-50 hover:bg-gray-50 p-6">
-              <div className="flex items-start flex-col justify-start gap-4">
-                <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden">
-                  <Image
-                    src="https://i.ibb.co.com/QM9mfzB/avatar.png"
-                    alt={sponsor.name}
-                    className="w-10 h-10 object-contain"
-                    width={40}
-                    height={40}
-                  />
-                </div>
-                <div>
-                  <h2 className="text-lg font-semibold text-gray-800">
-                    {sponsor.name}
-                  </h2>
-                  <p className="text-sm text-gray-500">{sponsor.type}</p>
-                </div>
+            {/* Header */}
+            <div className="p-8 flex flex-col items-center text-center bg-gradient-to-br from-green-50 to-emerald-50">
+              <div className="w-16 h-16 rounded-full bg-white border border-gray-200 flex items-center justify-center shadow-sm mb-3">
+                <Image
+                  src="https://i.ibb.co.com/QM9mfzB/avatar.png"
+                  alt={planter.name}
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
               </div>
-
-              {/* Stats Section */}
-              <div className="grid grid-cols-2 gap-3 bg-green-50">
-                <div className="border border-gray-200 rounded-lg p-3 text-start">
-                  <p className="text-xs text-green-700 font-medium opacity-60">
-                    Planted tree value
-                  </p>
-                  <p className="text-green-700 font-semibold md:text-[17px] ">
-                    {sponsor.treeValue}
-                  </p>
-                </div>
-                <div className="border border-gray-200 rounded-lg p-3 text-start">
-                  <p className="text-xs text-green-700 font-medium opacity-60">
-                    NFT owned
-                  </p>
-                  <p className="text-green-700 font-semibold md:text-[17px]">
-                    {sponsor.nftsOwned}
-                  </p>
-                </div>
-                <div className="border-2 border-gray-200 rounded-lg p-3 text-start">
-                  <p className="text-xs text-green-700 font-medium opacity-60">
-                    Species of trees
-                  </p>
-                  <p className="text-green-700 font-semibold md:text-[17px]">
-                    {sponsor.trees}
-                  </p>
-                </div>
-                <div className="border border-gray-200 rounded-lg p-3 text-start">
-                  <p className="text-xs text-green-700 font-medium opacity-60">
-                    NFT sold
-                  </p>
-                  <p className="text-green-700 font-semibold md:text-[17px]">
-                    {sponsor.nftsSold}
-                  </p>
-                </div>
-              </div>
+              <h2 className="text-lg font-semibold text-gray-800">{planter.name}</h2>
+              <p className="text-sm text-gray-500">{planter.type}</p>
             </div>
 
-            {/* Bottom Section */}
-            <div className="flex flex-wrap items-center text-sm text-gray-400 gap-2 px-6 py-3 bg-white border-t border-gray-100">
-              <span>🌟 {sponsor.sponsorLevel}</span>
+            {/* Stats */}
+            <div className="grid grid-cols-2 gap-3 p-6">
+              {[
+                { label: "Planted tree value", value: planter.treeValue },
+                { label: "NFT owned", value: planter.nftsOwned },
+                { label: "Species of trees", value: planter.trees },
+                { label: "NFT sold", value: planter.nftsSold },
+              ].map((item) => (
+                <div
+                  key={item.label}
+                  className="bg-green-50 border border-green-100 rounded-xl p-4 text-center hover:bg-green-100 transition-all"
+                >
+                  <p className="text-xs text-green-700 font-medium opacity-70 mb-1">
+                    {item.label}
+                  </p>
+                  <p className="text-green-800 font-semibold text-base">
+                    {item.value}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Footer */}
+            <div className="flex justify-center flex-wrap items-center gap-2 px-6 py-3 text-sm text-gray-500 border-t border-gray-100 bg-white">
+              <span className="text-yellow-600">🌿 {planter.sponsorLevel}</span>
               <span>•</span>
-              <span>{sponsor.location}</span>
+              <span>{planter.location}</span>
               <span>•</span>
-              <span>Planted {sponsor.joined}</span>
+              <span>Planted {planter.joined}</span>
             </div>
           </div>
         ))}

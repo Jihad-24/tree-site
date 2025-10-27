@@ -90,7 +90,7 @@ export default function Sponsors() {
               <div className="flex items-start flex-col justify-start gap-4">
                 <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden">
                   <Image
-                    src="https://i.ibb.co.com/QM9mfzB/avatar.png"
+                    src="https://i.ibb.co/QM9mfzB/avatar.png"
                     alt={sponsor.name}
                     className="w-10 h-10 object-contain"
                     width={40}
@@ -108,25 +108,33 @@ export default function Sponsors() {
               {/* Stats Section */}
               <div className="grid grid-cols-2 gap-3 bg-green-50">
                 <div className="border border-gray-200 rounded-lg p-3 text-start">
-                  <p className="text-xs text-green-700 font-medium opacity-60">Sponsored tree value</p>
+                  <p className="text-xs text-green-700 font-medium opacity-60">
+                    Sponsored tree value
+                  </p>
                   <p className="text-green-700 font-semibold md:text-[17px] ">
                     {sponsor.treeValue}
                   </p>
                 </div>
                 <div className="border border-gray-200 rounded-lg p-3 text-start">
-                  <p className="text-xs text-green-700 font-medium opacity-60">NFT owned</p>
+                  <p className="text-xs text-green-700 font-medium opacity-60">
+                    NFT owned
+                  </p>
                   <p className="text-green-700 font-semibold md:text-[17px]">
                     {sponsor.nftsOwned}
                   </p>
                 </div>
                 <div className="border-2 border-gray-200 rounded-lg p-3 text-start">
-                  <p className="text-xs text-green-700 font-medium opacity-60">Species of trees</p>
+                  <p className="text-xs text-green-700 font-medium opacity-60">
+                    Species of trees
+                  </p>
                   <p className="text-green-700 font-semibold md:text-[17px]">
                     {sponsor.trees}
                   </p>
                 </div>
                 <div className="border border-gray-200 rounded-lg p-3 text-start">
-                  <p className="text-xs text-green-700 font-medium opacity-60">NFT sold</p>
+                  <p className="text-xs text-green-700 font-medium opacity-60">
+                    NFT sold
+                  </p>
                   <p className="text-green-700 font-semibold md:text-[17px]">
                     {sponsor.nftsSold}
                   </p>

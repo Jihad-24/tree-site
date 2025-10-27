@@ -1,14 +1,14 @@
 import Image from "next/image";
 
 export default function Hero() {
-    return (
-        <div className="">
-            {/* Hero Section */}
+  return (
+    <div className="">
+      {/* Hero Section */}
       <section className="px-10 mt-10">
         <div className="w-full rounded-xl overflow-hidden">
           <div className="relative w-full max-h-80 h-80">
             <Image
-              src="https://i.ibb.co.com/60YQj4Hw/7b2b23d28341460c48165eb560435534.jpg"
+              src="https://i.ibb.co/60YQj4Hw/7b2b23d28341460c48165eb560435534.jpg"
               alt="Forest"
               fill
               className="object-cover"
@@ -21,6 +21,6 @@ export default function Hero() {
           </div>
         </div>
       </section>
-        </div>
-    )
+    </div>
+  );
 }

@@ -12,7 +12,7 @@ export default function ReplantWorldGallery() {
       species: "Rhizophora apiculata",
       common: "Tall-stilt mangrove",
       price: "1.16 USD",
-      image: "https://i.ibb.co.com/Vcnt5hW7/tree-1.jpg",
+      image: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
     },
     {
       id: 28011,
@@ -20,7 +20,7 @@ export default function ReplantWorldGallery() {
       species: "Rhizophora apiculata",
       common: "Tall-stilt mangrove",
       price: "1.16 USD",
-      image: "https://i.ibb.co.com/v6NR3KmV/tree-2.jpg",
+      image: "https://i.ibb.co/v6NR3KmV/tree-2.jpg",
     },
     {
       id: 28012,
@@ -28,7 +28,7 @@ export default function ReplantWorldGallery() {
       species: "Rhizophora apiculata",
       common: "Tall-stilt mangrove",
       price: "1.16 USD",
-      image: "https://i.ibb.co.com/gb4LktsG/tree-3.jpg",
+      image: "https://i.ibb.co/gb4LktsG/tree-3.jpg",
     },
     {
       id: 29010,
@@ -36,7 +36,7 @@ export default function ReplantWorldGallery() {
       species: "Avicennia marina",
       common: "Grey mangrove",
       price: "1.20 USD",
-      image: "https://i.ibb.co.com/Vcnt5hW7/tree-1.jpg",
+      image: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
     },
     {
       id: 29011,
@@ -44,7 +44,7 @@ export default function ReplantWorldGallery() {
       species: "Avicennia marina",
       common: "Grey mangrove",
       price: "1.20 USD",
-      image: "https://i.ibb.co.com/v6NR3KmV/tree-2.jpg",
+      image: "https://i.ibb.co/v6NR3KmV/tree-2.jpg",
     },
     {
       id: 29012,
@@ -52,7 +52,7 @@ export default function ReplantWorldGallery() {
       species: "Avicennia marina",
       common: "Grey mangrove",
       price: "1.20 USD",
-      image: "https://i.ibb.co.com/gb4LktsG/tree-3.jpg",
+      image: "https://i.ibb.co/gb4LktsG/tree-3.jpg",
     },
     {
       id: 29013,
@@ -60,7 +60,7 @@ export default function ReplantWorldGallery() {
       species: "Avicennia marina",
       common: "Grey mangrove",
       price: "1.20 USD",
-      image: "https://i.ibb.co.com/Vcnt5hW7/tree-1.jpg",
+      image: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
     },
     {
       id: 29014,
@@ -68,7 +68,7 @@ export default function ReplantWorldGallery() {
       species: "Avicennia marina",
       common: "Grey mangrove",
       price: "1.20 USD",
-      image: "https://i.ibb.co.com/v6NR3KmV/tree-2.jpg",
+      image: "https://i.ibb.co/v6NR3KmV/tree-2.jpg",
     },
     {
       id: 29015,
@@ -76,7 +76,7 @@ export default function ReplantWorldGallery() {
       species: "Avicennia marina",
       common: "Grey mangrove",
       price: "1.20 USD",
-      image: "https://i.ibb.co.com/gb4LktsG/tree-3.jpg",
+      image: "https://i.ibb.co/gb4LktsG/tree-3.jpg",
     },
   ];
 
@@ -96,7 +96,7 @@ export default function ReplantWorldGallery() {
           <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
             <div className="flex items-center gap-3">
               <Image
-                src="https://i.ibb.co.com/99PT6457/logo-black.png"
+                src="https://i.ibb.co/99PT6457/logo-black.png"
                 alt="Logo"
                 width={35}
                 height={35}

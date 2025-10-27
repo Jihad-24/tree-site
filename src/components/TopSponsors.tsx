@@ -20,23 +20,23 @@ export default function TopSponsors() {
               {[
                 {
                   name: "Binford Ltd.",
-                  img: "https://i.ibb.co.com/QM9mfzB/avatar.png",
+                  img: "https://i.ibb.co/QM9mfzB/avatar.png",
                 },
                 {
                   name: "Acme Co.",
-                  img: "https://i.ibb.co.com/QM9mfzB/avatar.png",
+                  img: "https://i.ibb.co/QM9mfzB/avatar.png",
                 },
                 {
                   name: "Barone LLC.",
-                  img: "https://i.ibb.co.com/QM9mfzB/avatar.png",
+                  img: "https://i.ibb.co/QM9mfzB/avatar.png",
                 },
                 {
                   name: "Abstergo Ltd. Ltd.",
-                  img: "https://i.ibb.co.com/QM9mfzB/avatar.png",
+                  img: "https://i.ibb.co/QM9mfzB/avatar.png",
                 },
                 {
                   name: "Biffco Enterprises Ltd.",
-                  img: "https://i.ibb.co.com/QM9mfzB/avatar.png",
+                  img: "https://i.ibb.co/QM9mfzB/avatar.png",
                 },
               ].map((sponsor, i) => (
                 <div
@@ -88,27 +88,27 @@ export default function TopSponsors() {
               {[
                 {
                   name: "Bessie Cooper",
-                  img: "https://i.ibb.co.com/QM9mfzB/avatar.png",
+                  img: "https://i.ibb.co/QM9mfzB/avatar.png",
                   trees: 1093,
                 },
                 {
                   name: "Szűts Gabriella",
-                  img: "https://i.ibb.co.com/QM9mfzB/avatar.png",
+                  img: "https://i.ibb.co/QM9mfzB/avatar.png",
                   trees: 965,
                 },
                 {
                   name: "Nagy Tímea",
-                  img: "https://i.ibb.co.com/QM9mfzB/avatar.png",
+                  img: "https://i.ibb.co/QM9mfzB/avatar.png",
                   trees: 855,
                 },
                 {
                   name: "Katona Beatrix",
-                  img: "https://i.ibb.co.com/QM9mfzB/avatar.png",
+                  img: "https://i.ibb.co/QM9mfzB/avatar.png",
                   trees: 754,
                 },
                 {
                   name: "Vincze Nikolett",
-                  img: "https://i.ibb.co.com/QM9mfzB/avatar.png",
+                  img: "https://i.ibb.co/QM9mfzB/avatar.png",
                   trees: 368,
                 },
               ].map((planter, i) => (

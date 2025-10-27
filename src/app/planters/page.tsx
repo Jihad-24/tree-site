@@ -89,14 +89,16 @@ export default function Planters() {
             <div className="p-8 flex flex-col items-center text-center bg-gradient-to-br from-green-50 to-emerald-50">
               <div className="w-16 h-16 rounded-full bg-white border border-gray-200 flex items-center justify-center shadow-sm mb-3">
                 <Image
-                  src="https://i.ibb.co.com/QM9mfzB/avatar.png"
+                  src="https://i.ibb.co/QM9mfzB/avatar.png"
                   alt={planter.name}
                   width={40}
                   height={40}
                   className="object-contain"
                 />
               </div>
-              <h2 className="text-lg font-semibold text-gray-800">{planter.name}</h2>
+              <h2 className="text-lg font-semibold text-gray-800">
+                {planter.name}
+              </h2>
               <p className="text-sm text-gray-500">{planter.type}</p>
             </div>
 

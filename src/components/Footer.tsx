@@ -7,7 +7,7 @@ export default function Footer() {
       <footer className="border-t border-gray-200 py-10 px-10 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center gap-3 flex-wrap">
           <Image
-            src={"https://i.ibb.co.com/99PT6457/logo-black.png"}
+            src={"https://i.ibb.co/99PT6457/logo-black.png"}
             alt="Logo"
             width={30}
             height={30}

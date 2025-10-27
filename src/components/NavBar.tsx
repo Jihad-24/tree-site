@@ -39,7 +39,7 @@ export default function Navbar({
     <nav className="flex items-center justify-between py-6 px-10">
       <div className="flex items-center gap-2">
         <Image
-          src="https://i.ibb.co.com/99PT6457/logo-black.png"
+          src="https://i.ibb.co/99PT6457/logo-black.png"
           alt="Logo"
           width={35}
           height={35}

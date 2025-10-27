@@ -1,55 +1,88 @@
 import Navbar from "@/components/NavBar";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Nft() {
   const nfts = [
     {
-      src: "https://i.ibb.co.com/Vcnt5hW7/tree-1.jpg",
+      id: 1,
+      src: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
       name: "Cyclamen",
       code: "#303503SC",
       price: "3",
+      description:
+        "Cyclamen is a small but beautiful plant that thrives in cool environments. Known for its vibrant petals and delicate fragrance, it's a favorite among indoor plant lovers.",
+      owner: "Replant Foundation",
     },
     {
-      src: "https://i.ibb.co.com/v6NR3KmV/tree-2.jpg",
+      id: 2,
+      src: "https://i.ibb.co/v6NR3KmV/tree-2.jpg",
       name: "Maranta",
       code: "#HG564GFS",
       price: "2",
+      description:
+        "Maranta, also known as the Prayer Plant, features stunning patterned leaves that fold up at night. It's a symbol of peace and gratitude.",
+      owner: "EcoGrow Labs",
     },
     {
-      src: "https://i.ibb.co.com/gb4LktsG/tree-3.jpg",
+      id: 3,
+      src: "https://i.ibb.co/gb4LktsG/tree-3.jpg",
       name: "Ponytail Palm",
       code: "#847G94JD",
       price: "5",
+      description:
+        "Ponytail Palm is a drought-tolerant beauty with a unique bulbous trunk. It’s perfect for minimal maintenance yet striking in any room.",
+      owner: "GreenVerse",
     },
     {
-      src: "https://i.ibb.co.com/Vcnt5hW7/tree-1.jpg",
+      id: 4,
+      src: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
       name: "String of Pearls",
       code: "#303503SC",
       price: "6",
+      description:
+        "String of Pearls is a succulent vine loved for its pearl-shaped leaves. It represents natural abundance and growth.",
+      owner: "NatureMint",
     },
     {
-      src: "https://i.ibb.co.com/Vcnt5hW7/tree-1.jpg",
+      id: 5,
+      src: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
       name: "Cyclamen",
       code: "#303503SC",
       price: "3",
+      description:
+        "Cyclamen is a small but beautiful plant that thrives in cool environments. Known for its vibrant petals and delicate fragrance, it's a favorite among indoor plant lovers.",
+      owner: "Replant Foundation",
     },
     {
-      src: "https://i.ibb.co.com/v6NR3KmV/tree-2.jpg",
+      id: 6,
+      src: "https://i.ibb.co/v6NR3KmV/tree-2.jpg",
       name: "Maranta",
       code: "#HG564GFS",
       price: "2",
+      description:
+        "Maranta, also known as the Prayer Plant, features stunning patterned leaves that fold up at night. It's a symbol of peace and gratitude.",
+      owner: "EcoGrow Labs",
     },
     {
-      src: "https://i.ibb.co.com/gb4LktsG/tree-3.jpg",
+      id: 7,
+      src: "https://i.ibb.co/gb4LktsG/tree-3.jpg",
       name: "Ponytail Palm",
       code: "#847G94JD",
       price: "5",
+      description:
+        "Ponytail Palm is a drought-tolerant beauty with a unique bulbous trunk. It’s perfect for minimal maintenance yet striking in any room.",
+      owner: "GreenVerse",
     },
     {
-      src: "https://i.ibb.co.com/Vcnt5hW7/tree-1.jpg",
+      id: 8,
+      src: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
       name: "String of Pearls",
       code: "#303503SC",
       price: "6",
+      description:
+        "String of Pearls is a succulent vine loved for its pearl-shaped leaves. It represents natural abundance and growth.",
+      owner: "NatureMint",
     },
   ];
 
@@ -80,24 +113,30 @@ export default function Nft() {
         </div>
 
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {nfts.map((nft, index) => (
-            <div key={index} className=" overflow-hidden  transition-all">
-              <div className="relative w-full h-96">
-                <Image
-                  src={nft.src}
-                  alt={nft.name}
-                  fill
-                  className="object-cover rounded-xl"
-                />
-              </div>
+          {nfts.map((nft) => (
+            <Link
+              href={`/nft/${nft?.id}`}
+              key={nft?.id}
+              className=" overflow-hidden  transition-all"
+            >
+              <div className=" overflow-hidden  transition-all">
+                <div className="relative w-full h-96">
+                  <Image
+                    src={nft.src}
+                    alt={nft.name}
+                    fill
+                    className="object-cover rounded-xl"
+                  />
+                </div>
 
-              {/* NFT info section */}
-              <div className="p-4 pl-0">
-                <h3 className="font-semibold text-gray-900">{nft.name}</h3>
-                <p className="text-sm text-gray-400 py-2">{nft.code}</p>
-                <p className="mt-1 font-bold text-2xl">${nft.price}</p>
+                {/* NFT info section */}
+                <div className="p-4 pl-0">
+                  <h3 className="font-semibold text-gray-900">{nft.name}</h3>
+                  <p className="text-sm text-gray-400 py-2">{nft.code}</p>
+                  <p className="mt-1 font-bold text-2xl">${nft.price}</p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

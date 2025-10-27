@@ -56,7 +56,7 @@ export default function Navbar() {
           </div>
 
           {/* Profile dropdown */}
-          <div className="relative" ref={menuRef}>
+          {/* <div className="relative" ref={menuRef}>
             <button
               onClick={() => setOpen((prev) => !prev)}
               className="w-10 h-10 cursor-pointer rounded-full overflow-hidden border border-gray-300 flex items-center justify-center relative"
@@ -67,9 +67,9 @@ export default function Navbar() {
                 width={40}
                 height={40}
                 className="object-cover rounded-full"
-              />
-              {/* Down arrow */}
-              <svg
+              /> */}
+          {/* Down arrow */}
+          {/* <svg
                 className="w-3 h-3 absolute bottom-0.5 right-0.5 bg-gray-300 rounded-full text-gray-600"
                 fill="none"
                 stroke="currentColor"
@@ -82,10 +82,10 @@ export default function Navbar() {
                   strokeWidth={2}
                   d="M19 9l-7 7-7-7"
                 />
-              </svg>
-            </button>
+              </svg> */}
+          {/* </button> */}
 
-            {open && (
+          {/* {open && (
               <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-xl shadow-md z-50">
                 <ul className="py-2 text-sm text-gray-700 ">
                   <li>
@@ -106,7 +106,7 @@ export default function Navbar() {
                 </ul>
               </div>
             )}
-          </div>
+            </div> */}
         </div>
       </nav>
     </>

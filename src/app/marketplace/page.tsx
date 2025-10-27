@@ -6,83 +6,123 @@ export default function Nft() {
   const nfts = [
     {
       id: 1,
-      src: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
-      name: "Cyclamen",
-      code: "#303503SC",
-      price: "3",
-      description:
-        "Cyclamen is a small but beautiful plant that thrives in cool environments. Known for its vibrant petals and delicate fragrance, it's a favorite among indoor plant lovers.",
-      owner: "Replant Foundation",
+      botanicalName: "Cyclamen persicum",
+      commonName: "Cyclamen",
+      iucnStatus: "NT",
+      country: "Turkey",
+      location: { lat: 39.9334, lng: 32.8597 },
+      captureDate: "2025-01-20",
+      planter: "EcoGrow",
+      nftCollection: "Flora NFTs",
+      nftId: "#303503SC",
+      plantingOrganization: "GreenThumb Community",
+      plantingCost: "3 USD",
+      image: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
     },
     {
       id: 2,
-      src: "https://i.ibb.co/v6NR3KmV/tree-2.jpg",
-      name: "Maranta",
-      code: "#HG564GFS",
-      price: "2",
-      description:
-        "Maranta, also known as the Prayer Plant, features stunning patterned leaves that fold up at night. It's a symbol of peace and gratitude.",
-      owner: "EcoGrow Labs",
+      botanicalName: "Maranta leuconeura",
+      commonName: "Maranta",
+      iucnStatus: "LC",
+      country: "Brazil",
+      location: { lat: -3.4653, lng: -62.2159 },
+      captureDate: "2025-02-15",
+      planter: "GrowGreen",
+      nftCollection: "Flora NFTs",
+      nftId: "#HG564GFS",
+      plantingOrganization: "GreenThumb Community",
+      plantingCost: "2 USD",
+      image: "https://i.ibb.co/v6NR3KmV/tree-2.jpg",
     },
     {
       id: 3,
-      src: "https://i.ibb.co/gb4LktsG/tree-3.jpg",
-      name: "Ponytail Palm",
-      code: "#847G94JD",
-      price: "5",
-      description:
-        "Ponytail Palm is a drought-tolerant beauty with a unique bulbous trunk. It’s perfect for minimal maintenance yet striking in any room.",
-      owner: "GreenVerse",
+      botanicalName: "Beaucarnea recurvata",
+      commonName: "Ponytail Palm",
+      iucnStatus: "LC",
+      country: "Mexico",
+      location: { lat: 19.4326, lng: -99.1332 },
+      captureDate: "2025-03-05",
+      planter: "EcoGrow",
+      nftCollection: "Flora NFTs",
+      nftId: "#847G94JD",
+      plantingOrganization: "GreenThumb Community",
+      plantingCost: "5 USD",
+      image: "https://i.ibb.co/gb4LktsG/tree-3.jpg",
     },
     {
       id: 4,
-      src: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
-      name: "String of Pearls",
-      code: "#303503SC",
-      price: "6",
-      description:
-        "String of Pearls is a succulent vine loved for its pearl-shaped leaves. It represents natural abundance and growth.",
-      owner: "NatureMint",
+      botanicalName: "Senecio rowleyanus",
+      commonName: "String of Pearls",
+      iucnStatus: "LC",
+      country: "South Africa",
+      location: { lat: -30.5595, lng: 22.9375 },
+      captureDate: "2025-03-15",
+      planter: "EcoGrow",
+      nftCollection: "Flora NFTs",
+      nftId: "#303503SC",
+      plantingOrganization: "GreenThumb Community",
+      plantingCost: "6 USD",
+      image: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
     },
     {
       id: 5,
-      src: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
-      name: "Cyclamen",
-      code: "#303503SC",
-      price: "3",
-      description:
-        "Cyclamen is a small but beautiful plant that thrives in cool environments. Known for its vibrant petals and delicate fragrance, it's a favorite among indoor plant lovers.",
-      owner: "Replant Foundation",
+      botanicalName: "Cyclamen persicum",
+      commonName: "Cyclamen",
+      iucnStatus: "NT",
+      country: "Turkey",
+      location: { lat: 39.9334, lng: 32.8597 },
+      captureDate: "2025-01-20",
+      planter: "EcoGrow",
+      nftCollection: "Flora NFTs",
+      nftId: "#303503SC",
+      plantingOrganization: "GreenThumb Community",
+      plantingCost: "3 USD",
+      image: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
     },
     {
       id: 6,
-      src: "https://i.ibb.co/v6NR3KmV/tree-2.jpg",
-      name: "Maranta",
-      code: "#HG564GFS",
-      price: "2",
-      description:
-        "Maranta, also known as the Prayer Plant, features stunning patterned leaves that fold up at night. It's a symbol of peace and gratitude.",
-      owner: "EcoGrow Labs",
+      botanicalName: "Maranta leuconeura",
+      commonName: "Maranta",
+      iucnStatus: "LC",
+      country: "Brazil",
+      location: { lat: -3.4653, lng: -62.2159 },
+      captureDate: "2025-02-15",
+      planter: "GrowGreen",
+      nftCollection: "Flora NFTs",
+      nftId: "#HG564GFS",
+      plantingOrganization: "GreenThumb Community",
+      plantingCost: "2 USD",
+      image: "https://i.ibb.co/v6NR3KmV/tree-2.jpg",
     },
     {
       id: 7,
-      src: "https://i.ibb.co/gb4LktsG/tree-3.jpg",
-      name: "Ponytail Palm",
-      code: "#847G94JD",
-      price: "5",
-      description:
-        "Ponytail Palm is a drought-tolerant beauty with a unique bulbous trunk. It’s perfect for minimal maintenance yet striking in any room.",
-      owner: "GreenVerse",
+      botanicalName: "Beaucarnea recurvata",
+      commonName: "Ponytail Palm",
+      iucnStatus: "LC",
+      country: "Mexico",
+      location: { lat: 19.4326, lng: -99.1332 },
+      captureDate: "2025-03-05",
+      planter: "EcoGrow",
+      nftCollection: "Flora NFTs",
+      nftId: "#847G94JD",
+      plantingOrganization: "GreenThumb Community",
+      plantingCost: "5 USD",
+      image: "https://i.ibb.co/gb4LktsG/tree-3.jpg",
     },
     {
       id: 8,
-      src: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
-      name: "String of Pearls",
-      code: "#303503SC",
-      price: "6",
-      description:
-        "String of Pearls is a succulent vine loved for its pearl-shaped leaves. It represents natural abundance and growth.",
-      owner: "NatureMint",
+      botanicalName: "Senecio rowleyanus",
+      commonName: "String of Pearls",
+      iucnStatus: "LC",
+      country: "South Africa",
+      location: { lat: -30.5595, lng: 22.9375 },
+      captureDate: "2025-03-15",
+      planter: "EcoGrow",
+      nftCollection: "Flora NFTs",
+      nftId: "#303503SC",
+      plantingOrganization: "GreenThumb Community",
+      plantingCost: "6 USD",
+      image: "https://i.ibb.co/Vcnt5hW7/tree-1.jpg",
     },
   ];
 
@@ -122,8 +162,8 @@ export default function Nft() {
               <div className=" overflow-hidden  transition-all">
                 <div className="relative w-full h-96">
                   <Image
-                    src={nft.src}
-                    alt={nft.name}
+                    src={nft.image}
+                    alt={nft.commonName}
                     fill
                     className="object-cover rounded-xl"
                   />
@@ -131,9 +171,11 @@ export default function Nft() {
 
                 {/* NFT info section */}
                 <div className="p-4 pl-0">
-                  <h3 className="font-semibold text-gray-900">{nft.name}</h3>
-                  <p className="text-sm text-gray-400 py-2">{nft.code}</p>
-                  <p className="mt-1 font-bold text-2xl">${nft.price}</p>
+                  <h3 className="font-semibold text-gray-900">
+                    {nft.commonName}
+                  </h3>
+                  <p className="text-sm text-gray-400 py-2">{nft.nftId}</p>
+                  <p className="mt-1 font-bold text-2xl">${nft.plantingCost}</p>
                 </div>
               </div>
             </Link>

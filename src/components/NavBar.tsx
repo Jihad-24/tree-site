@@ -4,29 +4,10 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Navbar({
-  onSearchClick,
-  onCancelClick,
-  isSearching,
-}: {
-  onSearchClick?: () => void;
-  onCancelClick?: () => void;
-  isSearching?: boolean;
-}) {
+export default function Navbar() {
+  
+
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
   const links = [
     { name: "Home", href: "/" },
     { name: "Marketplace", href: "/marketplace" },
@@ -34,15 +15,21 @@ export default function Navbar({
     { name: "Planters", href: "/planters" },
     { name: "Impact", href: "#" },
   ];
+// Conditional navbar background
+  const bgClass =
+    pathname?.startsWith("/nft/") // if on NFT details page
+      ? "bg-gradient-to-br from-green-50 via-white to-green-100"
+      : "bg-gray-100";
+
 
   return (
-    <nav className="flex items-center justify-between py-6 px-10">
+    <nav className={`${bgClass} flex items-center justify-between py-6 px-10 box-border shadow-sm transition-colors`}>
       <div className="flex items-center gap-2">
         <Image
           src="https://i.ibb.co/99PT6457/logo-black.png"
           alt="Logo"
-          width={35}
-          height={35}
+          width={30}
+          height={30}
         />
       </div>
 
@@ -63,21 +50,7 @@ export default function Navbar({
           ))}
         </div>
 
-        {isSearching ? (
-          <button
-            onClick={onCancelClick}
-            className="cursor-pointer  text-green-700 transition"
-          >
-            Cancel
-          </button>
-        ) : (
-          <button
-            onClick={onSearchClick}
-            className="cursor-pointer text-gray-700 hover:text-green-700 transition"
-          >
-            Search
-          </button>
-        )}
+        
       </div>
     </nav>
   );

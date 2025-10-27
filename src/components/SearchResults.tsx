@@ -2,8 +2,12 @@ import { useState } from "react";
 import Image from "next/image";
 import Head from "next/head";
 
-export default function ReplantWorldGallery() {
-  const [search, setSearch] = useState("");
+interface SearchResultsProps {
+  onClose: () => void; // 👈 this line fixes the error
+}
+
+export default function SearchResults({ onClose }: SearchResultsProps) {
+    const [search, setSearch] = useState("");
 
   const sponsors = [
     {
